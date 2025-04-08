@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.menu-open {
+    @apply translate-0;
+}
+
+.menu-closed {
+    @apply -translate-x-full md:translate-x-0 ;
+}
