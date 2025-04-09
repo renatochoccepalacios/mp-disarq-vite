@@ -10,7 +10,7 @@ const Banner = () => {
                         <span className='tracking-[3px] text-[14px]'>Diseño y Construcciones</span>
                     </h1>
                 </div>
-                <span className='absolute bottom-[90px] w-full text-center'>Diseño y Construcciones Un buen diseño consiste en convertir sueños en realidad.</span>
+                <span className='absolute bottom-[90px] w-full text-center px-[2rem] text-[.80rem]'>Diseño y Construcciones Un buen diseño consiste en convertir sueños en realidad.</span>
             </div>
 
         </section>
