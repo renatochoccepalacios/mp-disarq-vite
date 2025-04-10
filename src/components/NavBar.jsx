@@ -15,7 +15,7 @@ export const NavBar = () => {
                     onClick={toggleMenu} // Opcional: cerrar al hacer click en el fondo
                 />
             )}
-            <nav className='grid z-50 max-w-[800px] bg-secundario  m-auto md:flex p-4 relative grid-cols-2 gap-2.5 md:grid-cols-2 justify-between w-full items-center'>
+            <nav className='grid z-50 max-w-[1260px] bg-secundario  m-auto md:flex p-4 relative grid-cols-2 gap-2.5 md:grid-cols-2 justify-between w-full items-center'>
                 <h1 className='text-2xl font-bold'>My Website</h1>
 
                 <button onClick={toggleMenu} className='z-10 justify-self-end items-center md:hidden cursor-pointer'>
