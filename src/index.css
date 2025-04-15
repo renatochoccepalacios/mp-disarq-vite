@@ -29,7 +29,34 @@
         background-color: var(--color-background-suave);
     }
 
+    .bg-acento {
+        background-color: var(--color-acento);
+    }
+
+    .text-principal {
+        color: var(--color-background-principal);
+    }
+
+    .text-secundario {
+        color: var(--color-background-secundario);
+    }
+
+    .text-suave {
+        color: var(--color-background-suave);
+    }
+
     .text-acento {
         color: var(--color-acento);
+    }
+
+
+    .banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .75);
     }
 }
