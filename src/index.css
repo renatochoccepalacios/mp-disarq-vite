@@ -5,6 +5,7 @@
     --color-background-secundario: #E9D3C0;
     --color-acento: #A18167;
     --color-background-suave: #F2E5D9;
+
 }
 
 @layer components {
@@ -49,7 +50,18 @@
         color: var(--color-acento);
     }
 
+    .bg-brown {
+        background-color: #91766D;
+    }
+    .bg-rosy {
+        background-color: #C59D9B;
+    }
 
+    .bg-beige {
+        background-color: #F6ECE3;
+    }
+
+    
     .banner::after {
         content: "";
         position: absolute;
