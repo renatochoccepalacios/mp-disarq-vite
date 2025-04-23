@@ -22,6 +22,15 @@ export const NavBar = () => {
     }, []);// El array vacío [] significa que este efecto solo se ejecutará una vez, cuando el componente se monte
 
 
+    // Este efecto es para manejar el overflow del body según isOpen
+    useEffect(() => {
+        document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
     return (
         <header className={`grid  z-50 fixed w-full transition-all duration-300 ease-in-out   gap-[2rem] `}>
             {/* Overlay */}
@@ -31,7 +40,7 @@ export const NavBar = () => {
                     onClick={toggleMenu} // Opcional: cerrar al hacer click en el fondo
                 />
             )}
-            <div className={` z-50  transition-all duration-300 ease-in-out ${scrollY ? 'bg-brown' : 'bg-transparent'}   text-principal  `} >
+            <div className={` z-50  transition-all duration-300 ease-in-out text-principal  ${isOpen || scrollY ? 'bg-brown' : 'bg-transparent'} `} >
                 <nav className='max-w-[1260px] grid  m-auto md:flex p-4 relative grid-cols-2 gap-2.5 md:grid-cols-2 justify-between w-full items-center'>
                     <h1 className='text-2xl font-bold'>Mp Disarq</h1>
 
